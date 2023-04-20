@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    width:70%;
+    margin:auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+
+li{
+    padding-inline: 10px;
+    list-style-type: none;
+    color: white;
+}
+
+header{
+    background-color: #5caae9;
+}
+
+nav{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    align-items: center;
+    justify-content: center;
+}
