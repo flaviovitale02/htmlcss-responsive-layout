@@ -5,8 +5,8 @@
 }
 
 .container{
-    width:70%;
-    margin:auto;
+    display: block;
+    margin: auto; 
 }
 
 .flex{
@@ -40,15 +40,20 @@ nav div{
 }
 
 .special-col{
-    width: calc( ( (100% / 3) * 2 ) - 2rem);
+    width: 100%;
     background-color: #b5ddff;
     border-radius: 20px;
     display: flex;
     margin-right: 1rem;
     margin-top: 1rem;
 }
+.special-col>*{
+    margin:auto
+}
+
 .col{
-    width: calc(100% / 3 - 2rem);
+    width: 100%;
+    margin-top: 30px;
     background-color: #b5ddff;
     border-radius: 20px;   
     padding-bottom: 30px;
@@ -56,6 +61,7 @@ nav div{
     margin-right: 1rem;
     margin-top: 1rem;
 }
+
 
 .col>*{
     text-align: center;
@@ -107,32 +113,33 @@ nav div{
     color: #0e8bfd;
 }
 
-@media screen and (max-width:768px){
-
+@media screen and (min-width:768px){
     .container{
-        margin-inline: 20px;
+        width:70%;
+        margin:auto;
     }
     .special-col{
-        width: calc(2*((100% - 10px ) / 3)) ;
-        display: block;
-    }  
+        width: calc( ( (100% / 3) * 2 ) - 2rem);
+    }
 }
 
-@media screen and (max-width:480px){
+@media screen and (min-width:480px){
+    
     .container{
-        display: block;
-        margin: auto; 
+        margin-inline: 20px;
+        margin: auto;
     }
     .special-col{
-        width: 100%;
-        
-    }
+        width: calc ( 100% / 3 * 2 - 2rem) ;
+    }  
+    
     .col{
-        width: 100%;
-        margin-top: 30px;
+        width: calc(100% / 3 - 2rem);
     }
+    
+}
 
-    .special-col>*{
-        margin:auto
-    }
+
+.bg-celeste{
+    background-color: #9792e4;
 }
