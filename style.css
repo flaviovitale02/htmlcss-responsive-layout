@@ -39,16 +39,22 @@ nav div{
     justify-content: center;
 }
 
+.none{
+    display: none;
+}
+
 .special-col{
-    width: 100%;
+    width: 100%;margin-right: 1rem;
     background-color: #b5ddff;
     border-radius: 20px;
     display: flex;
+    flex-direction: column;
     margin-right: 1rem;
     margin-top: 1rem;
+    margin-left: 1rem;
 }
 .special-col>*{
-    margin:auto
+    margin:auto;
 }
 
 .col{
@@ -60,6 +66,7 @@ nav div{
     aspect-ratio: 1/1;
     margin-right: 1rem;
     margin-top: 1rem;
+    margin-left: 1rem;
 }
 
 
@@ -92,13 +99,13 @@ nav div{
 }
 
 .special-col-image{
-    width: 50%;
+    width: 100%;
     margin-top: 50px;
+    text-align: center;
 }
 
 .special-col-image img{
-    width: 100%;
-    display: block;
+    width: 70%;
 }
 
 .special-col h2{
@@ -120,6 +127,19 @@ nav div{
     }
     .special-col{
         width: calc( ( (100% / 3) * 2 ) - 2rem);
+        flex-direction: row;
+    }
+    .special-col-image{
+        flex-direction: row;
+    }
+    .special-col-image img{
+        width:  100%;
+    }
+    .none{
+        display: inline-block;
+    }
+    .none-desk{
+        display: none;
     }
 }
 
