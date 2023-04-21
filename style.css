@@ -129,9 +129,7 @@ nav div{
         width: calc( ( (100% / 3) * 2 ) - 2rem);
         flex-direction: row;
     }
-    .special-col-image{
-        flex-direction: row;
-    }
+    
     .special-col-image img{
         width:  100%;
     }
@@ -149,10 +147,15 @@ nav div{
         margin-inline: 20px;
         margin: auto;
     }
+
+
     .special-col{
-        width: calc ( 100% / 3 * 2 - 2rem) ;
+        width: calc( ( (100% / 3) * 2 ) - 2rem) ;
+        flex-direction: row;
     }  
-    
+    .special-col-image{
+        width: 100%;
+    }
     .col{
         width: calc(100% / 3 - 2rem);
     }
